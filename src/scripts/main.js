@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const generateButton = document.getElementById('generateButton');
-    const resultDiv = document.getElementById('result'); 
+    const resultDiv = document.getElementById('result');
 
     generateButton.addEventListener('click', function() {
         const maxNumber = document.getElementById('maxNumber').value;
@@ -18,4 +18,3 @@ document.addEventListener('DOMContentLoaded', function() {
         return Math.floor(Math.random() * max) + 1;
     }
 });
-
