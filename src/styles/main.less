@@ -1,0 +1,65 @@
+@fontePrincipal: 'Roboto', sans-serif;
+@fonteDoTitulo: 'Anton', sans-serif;
+@corDoTexto: white;
+@corDoFundo: #2c3e50;
+@corDoContainer: #34495e;
+@corDosBotoes: #34e7e4;
+@corDoTextoBotoes: #2c3e50;
+@bordaDoBotao: #34e7e4;
+
+body {
+    background-color: @corDoFundo;
+    color: @corDoTexto;
+    font-family: @fontePrincipal;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: @corDoContainer;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: @fonteDoTitulo;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid @corDosBotoes;
+    width: calc(100% - 24px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: @corDosBotoes;
+    color: @corDoTextoBotoes;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: @corDosBotoes;
+    border: 2px solid @bordaDoBotao;
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: @corDosBotoes;
+}
